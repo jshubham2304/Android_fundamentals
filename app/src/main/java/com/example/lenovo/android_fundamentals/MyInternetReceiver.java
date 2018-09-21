@@ -17,5 +17,7 @@ public class MyInternetReceiver extends BroadcastReceiver {
             Toast.makeText(context, "Airplane Mode ", Toast.LENGTH_SHORT).show();
         if (intent.getAction().equals(Intent.ACTION_POWER_CONNECTED))
             Toast.makeText(context, "Power On", Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(context, "Internet Available", Toast.LENGTH_SHORT).show();
     }
 }
