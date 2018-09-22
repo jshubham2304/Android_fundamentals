@@ -52,7 +52,7 @@ Intent i1 = new Intent();
 i1.setAction("com.example.myalarm");
         PendingIntent pendingIntent = PendingIntent.getActivity(this,0,i1,0);
         Toast.makeText(this, "Start Alarm", Toast.LENGTH_SHORT).show();
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(), 10000,pendingIntent);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(), 30000,pendingIntent);
 
     }
 
