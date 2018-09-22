@@ -63,4 +63,10 @@ i1.setAction("com.example.myalarm");
         PendingIntent pendingIntent = PendingIntent.getActivity(this,0,i1,0);
         alarmManager.cancel(pendingIntent);
     }
+
+    public void StartReciver(View view) {
+        Intent intent = new Intent("com.noInternet.service.example");
+        Toast.makeText(this, "START BOARDCAST RECIVER", Toast.LENGTH_SHORT).show();
+        sendBroadcast(intent);
+    }
 }

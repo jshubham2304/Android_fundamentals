@@ -20,5 +20,9 @@
         android:id="@+id/stopAlarm"
         android:onClick="StopAlarm"
         android:text=" Alarm OFF "/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartReciver"/>
 
 </LinearLayout>
